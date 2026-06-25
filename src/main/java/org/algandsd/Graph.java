@@ -71,6 +71,8 @@ public class Graph {
     }
 
     public void createGraph(String string) {
+        vCount = 0;
+        eCount = 0;
         graphMap.clear();
         for (String edge : string.trim().split("\\s*,\\s*")) {
             String[] parts = edge.split("\\s*-\\s*");
