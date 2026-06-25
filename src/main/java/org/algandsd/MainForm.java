@@ -72,7 +72,7 @@ public class MainForm extends JFrame {
         deleteEdgeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                graph.addEdge((int) v1DeleteEdgeSpinner.getValue(), (int) v2DeleteEdgeSpinner.getValue());
+                graph.removeEdge((int) v1DeleteEdgeSpinner.getValue(), (int) v2DeleteEdgeSpinner.getValue());
                 v1AddEdgeSpinner.setValue(v1DeleteEdgeSpinner.getValue());
                 v2AddEdgeSpinner.setValue(v2DeleteEdgeSpinner.getValue());
                 if ((int) v1DeleteEdgeSpinner.getValue() > 0) {
